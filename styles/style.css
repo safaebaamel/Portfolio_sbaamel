@@ -1,0 +1,180 @@
+@import url('https://fonts.googleapis.com/css2?family=Syne+Mono&display=swap');
+
+* {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Syne Mono', monospace;
+}
+
+.nav {
+    background-color: rgb(42, 162, 232, 35%);
+    padding: 5px 60px 20px;
+    display: inline;
+}
+
+.navbar #Logo {
+    list-style: none;
+    font-size: 37px;
+    font-weight: 700;
+    cursor:pointer;
+    padding-left: 50px;
+    user-select: none;
+    color: black;
+}
+
+.navbar .btn {
+    align-self: left;
+    background-color: black;
+    color: white;
+    float: left;
+    top: 20px;
+    right: 16px;
+    position: absolute;
+    border: black;
+}
+
+.navbar .btn:hover {
+    color: black;
+    background-color: white;
+} 
+
+@media all and (max-width: 1000px) {
+    .navbar #Logo {
+        font-size: 25px;
+        font-weight: 700;
+    }
+    .navbar .btn {
+        position: unset;
+    }
+}
+/*------------------END---NAV------------------------------*/
+
+.first {
+    height: 600px;
+    background: rgb(42, 162, 232, 35%);
+    width: 100%;
+    justify-content: center;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+}
+
+.first .container{
+    text-align: center;
+    font-weight: 300; 
+    padding: 130px 100px 100px 100px; 
+    border: 2px solid black;
+    justify-content: center;
+    border-radius: 30mm;
+    border-style: double;
+    box-shadow: black;
+}
+.container .picy {
+    justify-content: center;
+    text-align: center;
+    align-content: center;
+    display: block;
+}
+.container .btn {
+    background-color: black;
+    color: white;
+    border: black;
+    margin: 10px;
+    font-size: 17px;
+}
+
+.container .btn:hover {
+    color: black;
+    background-color: white;
+}
+
+p {
+    font-size: 25px;
+}
+
+@media all and (max-width: 1000px) {
+    .first {
+        height: auto;
+    }
+    .container {
+        font-size: 15px;
+        flex-wrap: wrap;
+        flex-direction: row;
+    }
+    .writing {
+        width: 100%;
+        position: unset;
+    }
+    .writing p {
+        font-size: 18px;
+    }
+    .picy {
+        width: 20%;
+    }
+    .picy img {
+        width: 150px;
+    }
+
+}
+
+/*-------------------------------------*/
+
+.second {
+    height: auto;
+    padding: 50px 50px 50px 50px;
+    width: 100%;
+    background-color: white;
+}
+
+.co-container {
+    display: flex;
+    flex-direction: row;
+    padding: 30px;
+}
+
+.co-container .picture{
+    width: 50%;
+}
+
+.co-container .picture img {
+    height: 600px;
+    /* padding-left: 180px; */
+    padding: 30px 100px 30px;
+}
+ 
+.co-container .bio {
+    padding: 20px 20px 20px 20px;
+    margin-top: 40px;
+}
+
+@media all and (max-width: 1231px) {
+    .co-container {
+        flex-wrap: wrap;
+    }
+    .co-container .picture img {
+        height:500px;
+        padding: unset;
+    }
+}
+
+@media all and (max-width: 974px) {
+    .co-container {
+        flex-wrap: wrap;
+        flex-direction: row;
+        width: 100%;
+    }
+    .co-container .picture img {
+       height: 259px;
+    }
+    .co-container h1 {
+        font-size: 24px;
+    }
+    .co-container p {
+        font-size: 18px;
+    }
+}
+
